@@ -1,0 +1,105 @@
+.attribution {
+  color: black;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* general properties */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+#suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+#sedan,
+#suv,
+#luxury {
+  padding: 55px 50px 55px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  display: flex;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  margin: 50px 0 50px 0;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 30px;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+
+.learn-more-button {
+  box-sizing: border-box;
+  margin-top: 25px;
+  width: 160px;
+  height: 50px;
+  background-color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: screen;
+}
+
+.learn-more-button:hover {
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: hsla(0, 0%, 95%, 0);
+}
+
+/* mobile design */
+
+#container {
+  box-sizing: border-box;
+  max-width: 375px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* desktop design */
+@media screen and (min-width: 1000px){
+  #container{
+    flex-direction: row;
+    max-width: 990px;
+  }
+}
