@@ -94,8 +94,24 @@ p {
   overflow: hidden;
 }
 
+/* tablet design */
+@media screen and (min-width: 990px) {
+  #container{
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  #sedan,
+  #suv,
+  #luxury {
+    flex-basis: 33.3%;
+    width: 100%;
+  }
+  
+}
+
 /* desktop design */
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
   #container{
     margin-top: 50px;
     flex-direction: row;
